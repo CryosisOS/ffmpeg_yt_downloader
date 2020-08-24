@@ -29,11 +29,11 @@ int main(int argc, const char *argv[]) {
     try {
         args.parse_args(argc, argv);
         actions(std::move(args));
-    } catch (const std::runtime_error& err) {
+    } catch (const std::exception& err) {
         std::cerr << err.what() << std::endl;
         return 1;
     } catch (...) {
-        std::cerr << "ERROR" << std::endl;
+        std::cerr << "unknown error" << std::endl;
         return 1;
     }
     return 0;
