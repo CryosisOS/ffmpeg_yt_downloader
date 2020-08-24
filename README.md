@@ -8,14 +8,14 @@ README file for current folder
 
 ## Contents
 
-./build
-./Makefile
-./src
-./src/ffmpeg_handler.cpp
-./src/ffmpeg_handler.hpp
-./src/main.cpp
-./src/ui.cpp
-./src/ui.hpp
+./build  
+./Makefile  
+./src  
+./src/ffmpeg_handler.cpp  
+./src/ffmpeg_handler.hpp  
+./src/main.cpp  
+./src/ui.cpp  
+./src/ui.hpp  
 
 ## Dependencies
 
