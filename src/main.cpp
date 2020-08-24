@@ -4,6 +4,7 @@
  * GitHub: github.com/CryosisOS
  */
 
+#include <iostream>
 #include "include/argparse.hpp"
 
 int main(int argc, const char *argv[]) {
@@ -11,7 +12,9 @@ int main(int argc, const char *argv[]) {
     try {
         args.parse_args(argc, argv);
     } catch (const std::runtime_error& err) {
-        std::cout << err.what() << std::endl;
+        std::cerr << err.what() << std::endl;
+    } catch (...) {
+        std::cerr << "ERROR" << std::endl;
     }
     return 0;
 }
