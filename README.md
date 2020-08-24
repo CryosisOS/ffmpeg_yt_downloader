@@ -4,11 +4,7 @@ README file for current folder
 
 ## Installation
 
-N/A
-
 ## Usage
-
-N/A
 
 ## Contents
 
@@ -26,5 +22,3 @@ N/A
 None
 
 ## Version information
-
-v0.0 - Still in Development - 2020/08/24
