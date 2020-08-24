@@ -9,16 +9,21 @@ README file for current folder
 ## Contents
 
 ./build  
+./build/dist  
+./build/objects  
 ./Makefile  
 ./src  
 ./src/ffmpeg_handler.cpp  
 ./src/ffmpeg_handler.hpp  
+./src/include  
+./src/include/argparse.hpp  
+./src/log.txt  
 ./src/main.cpp  
 ./src/ui.cpp  
 ./src/ui.hpp  
 
 ## Dependencies
 
-ArgParse - https://github.com/p-ranav/argparse/tag/v2.0 - Release
+None
 
 ## Version information
