@@ -5,11 +5,12 @@
  */
 
 #include <iostream>
+#include <utility>
 #include "include/argparse.hpp"
 
 void actions(argparse::ArgumentParser&& args) {
     if (auto url = args.present("-u")) {
-        std::cout << "URL stuff" << std::endl;
+        std::cout << (std::string("URL: ") + url.value()) << std::endl;
     }
 }
 
