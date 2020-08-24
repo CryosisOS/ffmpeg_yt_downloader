@@ -5,6 +5,8 @@
  */
 
 #pragma once
+#include <vector>
+#include <string>
 
 std::vector<std::string> getURLsFromFile(const std::string&);
 std::vector<std::string> getURLsFromuser();

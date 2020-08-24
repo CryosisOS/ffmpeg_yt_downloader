@@ -12,9 +12,9 @@
 #include <vector>
 
 std::vector<std::string> getURLsFromFile(const std::string& filename){
-    return NULL;
+    return {};
 }
 
 std::vector<std::string> getURLsFromUser(){
-    return NULL;
+    return {};
 }
