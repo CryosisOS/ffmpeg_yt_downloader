@@ -20,7 +20,7 @@ void actions(argparse::ArgumentParser&& args) {
 }
 
 int main(int argc, const char *argv[]) {
-    argparse::ArgumentParser args{"YT Downloader"};
+    argparse::ArgumentParser args{"yt_downloader"};
     args.add_argument("-u", "--url")
         .help("specifies video URL");
     args.add_argument("-c", "--csv")

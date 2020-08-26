@@ -13,4 +13,4 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 file(GLOB_RECURSE SRC_CPP "src/*.cpp")
-add_executable(main ${SRC_CPP})
+add_executable(yt_downloader ${SRC_CPP})
