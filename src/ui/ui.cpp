@@ -1,0 +1,17 @@
+/**
+ * Author: CryosisOS
+ * Date Created: 2020-08-24
+ * GitHub: github.com/CryosisOS
+ */
+
+#include "ui.hpp"
+#include <fstream>
+#include <iostream>
+
+std::vector<std::string> getURLsFromFile(const std::string& filename){
+    return {};
+}
+
+std::vector<std::string> getURLsFromUser(){
+    return {};
+}
