@@ -6,8 +6,8 @@
 
 #include <iostream>
 #include <utility>
-#include "include/argparse.hpp"
-#include "include/csv.hpp"
+#include <argparse/argparse.hpp>
+#include <csv/csv.hpp>
 
 // Argument actions.
 void actions(argparse::ArgumentParser&& args) {
