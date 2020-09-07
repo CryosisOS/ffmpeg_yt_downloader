@@ -1,2 +1,3 @@
-CPP=g++
-CPP_FLAGS=std=c++17
+all:
+	cmake -B ./bin -S ./
+	make -C ./bin/

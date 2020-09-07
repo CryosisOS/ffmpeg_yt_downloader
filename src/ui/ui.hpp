@@ -5,8 +5,12 @@
  */
 
 #pragma once
+
+//Library Imports
 #include <vector>
 #include <string>
 
-std::vector<std::string> getURLsFromFile(const std::string&);
-std::vector<std::string> getURLsFromuser();
+//Project Imports
+
+
+bool validateCSVFileName(const std::string& filename);

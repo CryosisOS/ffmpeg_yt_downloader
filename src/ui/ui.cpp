@@ -4,14 +4,21 @@
  * GitHub: github.com/CryosisOS
  */
 
+//Linked Header Import
 #include "ui.hpp"
+
+//Library Imports
 #include <fstream>
 #include <iostream>
 
-std::vector<std::string> getURLsFromFile(const std::string& filename){
-    return {};
-}
+//Project Imports
 
-std::vector<std::string> getURLsFromUser(){
-    return {};
+
+bool validateCSVFileName(const std::string& filename){
+    std::ifstream file;
+    file.open(filename);
+    if(!file)
+        return false;
+    file.close();
+    return true;
 }

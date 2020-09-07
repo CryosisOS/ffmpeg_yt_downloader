@@ -34,3 +34,4 @@
 # CMake output
 bin
 CMakeFiles
+src/CMakeFiles
