@@ -7,10 +7,13 @@
 #pragma once
 
 //Library Imports
+#include <fstream>
 #include <vector>
 #include <string>
 
 //Project Imports
 
-
-bool validateCSVFileName(const std::string& filename);
+inline bool check_file(const std::string& filename) {
+    std::ifstream f{filename};
+    return f.good();
+}

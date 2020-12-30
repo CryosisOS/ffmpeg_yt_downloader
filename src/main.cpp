@@ -12,6 +12,7 @@
 
 //Project Imports
 #include "ui/ui.hpp"
+#include "ffmpeg/ffmpeg_handler.hpp"
 
 // Argument actions.
 void actions(argparse::ArgumentParser&& args) {
@@ -20,7 +21,7 @@ void actions(argparse::ArgumentParser&& args) {
     }
     if (auto csvfile = args.present("-c")) {
         std::cout << "Checking if CSV exists:" << std::endl << "Found: ";
-        std::cout << std::boolalpha << validateCSVFileName(csvfile.value()) << std::endl;
+        std::cout << std::boolalpha << check_file(csvfile.value()) << std::endl;
     }
 }
 

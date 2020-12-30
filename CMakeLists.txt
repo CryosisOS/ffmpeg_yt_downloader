@@ -24,7 +24,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 # executable and include dir
 add_executable(downloader
     src/main.cpp
-    src/ui/ui.cpp
     src/ffmpeg/ffmpeg_handler.cpp
 )
 target_include_directories(downloader PRIVATE
