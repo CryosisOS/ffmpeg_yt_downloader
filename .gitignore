@@ -32,6 +32,4 @@
 *.app
 
 # CMake output
-bin
-CMakeFiles
-src/CMakeFiles
+bin/

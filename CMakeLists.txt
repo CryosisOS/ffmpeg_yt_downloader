@@ -1,11 +1,9 @@
 ########################################################################################################################
-# To generate makefiles:
 # cmake -B bin
-#
-# To build:
 # cmake --build bin
 ########################################################################################################################
-cmake_minimum_required(VERSION 3.17)
+
+cmake_minimum_required(VERSION 3.19)
 project(
     ffmpeg_yt_downloader
     VERSION 1.0
@@ -13,11 +11,29 @@ project(
     LANGUAGES CXX
 )
 
-if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-    set(CMAKE_CXX_STANDARD 17)
-    set(CMAKE_CXX_STANDARD_REQUIRED true)
-    set(CMAKE_CXX_EXTENSIONS off)
+if (PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
+    message(FATAL_ERROR
+        "In source builds not supported, use `cmake -B bin`."
+    )
 endif()
 
-include_directories(include)
-add_subdirectory(src)
+# use C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED true)
+
+# executable and include dir
+add_executable(downloader
+    src/main.cpp
+    src/ui/ui.cpp
+    src/ffmpeg/ffmpeg_handler.cpp
+)
+target_include_directories(downloader PRIVATE
+    include/
+)
+
+# compiler warnings
+if (MSVC)
+    add_compile_options(/W4)
+else()
+    add_compile_options(-Wall -Wextra)
+endif()
